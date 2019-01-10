@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,6 +16,7 @@
 
 .nav-list {
     text-align: center;
+    font-size: 0;
 }
 
 .list-item {
@@ -22,12 +25,25 @@
     margin-right: 100px;
 }
 
+.list-item-last {
+    margin-right: 0;
+}
+
 .nav-link {
+    display: block;
     text-decoration: none;
     font-size: 14px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
     text-transform: uppercase;
+}
+
+.nav-link:hover {
+      color: rgb(3, 169, 244) 
+}
+
+.main-section{
+    font-size: 0;
 }
 
 .article {
@@ -37,11 +53,15 @@
 }
 
 .article-r {
-    margin: 0 56px 0 0;
+    margin: 0 60px 0 0;
 }
 
-.article-l{
+.article-l {
     margin-bottom: 55px;
+}
+
+.article-image{
+    margin-bottom: 30px;
 }
 
 .inscription {
@@ -50,7 +70,8 @@
     color: rgb(180, 173, 158);
     text-transform: uppercase;
     line-height: 1;
-    margin: 30px 0;
+    /* margin: 0; */
+    margin-bottom: 30px;
 }
 
 .title {
@@ -58,6 +79,7 @@
     font-family: "PlayfairDisplay";
     color: rgb(98, 98, 98);
     line-height: 1;
+    /* margin: 0; */
     margin-bottom: 40px;
 }
 
@@ -66,6 +88,7 @@
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
     line-height: 1.714;
+    /* margin: 0; */
 }
 
 .load-more {
@@ -84,5 +107,11 @@
     outline: none;
     cursor: pointer;
     margin: 0 auto;
-    
+    margin-bottom: 70px;
+}
+
+.load-more:hover {
+    font-size: 150%;
+    border-color: rgb(3, 169, 244);
+    color: rgb(3, 169, 244);
 }
