@@ -44,6 +44,7 @@
 
 .main-section{
     font-size: 0;
+    padding-bottom: 70px;
 }
 
 .article {
@@ -107,11 +108,10 @@
     outline: none;
     cursor: pointer;
     margin: 0 auto;
-    margin-bottom: 70px;
 }
 
 .load-more:hover {
-    font-size: 150%;
+    font-size: 25px;
     border-color: rgb(3, 169, 244);
     color: rgb(3, 169, 244);
 }
