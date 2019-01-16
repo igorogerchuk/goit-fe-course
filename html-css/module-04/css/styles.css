@@ -18,14 +18,14 @@
     margin: 0;
     float: left;
     font-size: 30px;
-    font-family: "Roboto Light";
+    font-family: "Roboto Light", sans-serif;
     color: rgb(85, 82, 82);
     text-transform: uppercase;
 }
 
 .logo::first-letter {
     font-size: 30px;
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
     color: rgb(26, 188, 156);
     text-transform: uppercase;
 }
@@ -47,7 +47,7 @@
 .nav-link {
     text-decoration: none;
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
     color: rgb(15, 1, 1);
     font-weight: bold;
     text-transform: uppercase;
@@ -60,7 +60,7 @@
 .section-title {
     text-align: center;
     font-size: 48px;
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
     color: rgb(81, 81, 81);
     text-transform: uppercase;
     margin-bottom: 130px;
@@ -103,7 +103,7 @@
     width: 201px;
     height: 40px;
     font-size: 18px;
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 40px;
@@ -116,12 +116,20 @@
     width: 54px;
     height: 40px;
     font-size: 18px;
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 40px;
     background-color: rgb(140, 140, 140);
     text-align: center;
+}
+
+.product-list-item:hover .product-name{
+    background-color: rgb(26, 188, 156);
+}
+
+.product-list-item:hover .product-price{
+    background-color: rgb(127, 217, 199);
 }
 
 .product-section {
@@ -139,24 +147,50 @@
     margin-right: 0;
 }
 
-.news-text {
-    font-size: 14px;
-    font-family: "OpenSans";
+.news-title {
+    font-size: 18px;
+    font-family: "OpenSans", sans-serif;
     color: rgb(85, 82, 82);
+    font-weight: 700;
     line-height: 26px;
 }
 
-.news-text::first-line {
-    font-size: 18px;
-    font-family: "OpenSans";
+.news-title::after {
+    content: "";
+    display: block;
+    width: 136px;
+    border: 2px solid rgb(26, 188, 156);
+    margin: 11px 0 26px 0;
+}
+
+.news-text {
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
     color: rgb(85, 82, 82);
-    font-weight: 700; 
     line-height: 26px;
-    border: 5px solid rgb(26, 188, 156);
-      
+    margin-bottom: 16px;
 }
 
 .news-section {
     padding-bottom: 80px;
+}
 
+.read-more {
+    display: block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 198, 171);
+    border: rgb(78, 198, 171);
+    border-radius: 3px;
+}
+
+.read-more:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4)
 }
