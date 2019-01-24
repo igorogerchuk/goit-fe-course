@@ -1,0 +1,111 @@
+@import "vars.css";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    margin: 0;
+    float: left;
+    font-size: 30px;
+    font-family: var(--logo-font);
+    color: var(--logo-color);
+    text-transform: uppercase;
+}
+
+.logo::first-letter {
+    font-size: 30px;
+    font-family: var(--logo-font);
+    font-weight: bold;
+    color: var(--aqua-color);
+    text-transform: uppercase;
+}
+
+.nav-list {
+    margin-top: 8px;
+    float: right;
+}
+
+.nav-list-item {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+
+.nav-list-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--nav-link-font);
+    color: var(--nav-link-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--aqua-color);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.banner {
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackout-color);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+button{
+    width: 110px;
+    height: 110px;
+    background-color: black;
+    
+}
+
+i{
+    font-size: 104px;
+    color: aqua;
+}

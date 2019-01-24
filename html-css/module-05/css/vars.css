@@ -1,0 +1,8 @@
+:root{
+    --logo-font:"Roboto", sans-serif;
+    --nav-link-font:"OpenSans", sans-serif;
+    --nav-link-color:rgb(15, 1, 1);
+    --aqua-color:rgb(26, 188, 156);
+    --logo-color: rgb(85, 82, 82);
+    --blackout-color: rgba(0, 0, 2, 0.52);
+}
