@@ -3,6 +3,15 @@
     --nav-link-font:"OpenSans", sans-serif;
     --nav-link-color:rgb(15, 1, 1);
     --aqua-color:rgb(26, 188, 156);
+    --white-color:#fff;
+    --almost-white-color:rgb(254, 254, 254);
     --logo-color: rgb(85, 82, 82);
     --blackout-color: rgba(0, 0, 2, 0.52);
+    --banner-button-color: rgba(78, 198, 171, .65);
+    --title-color: #515151;
+    --main-background-color: #e9f0fe;
+    --name-back-color: rgb(50, 50, 50);
+    --price-back-color: rgb(140, 140, 140);
+
+
 }
