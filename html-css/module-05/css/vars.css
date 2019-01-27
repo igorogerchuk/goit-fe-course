@@ -1,5 +1,6 @@
 :root{
     --logo-font:"Roboto", sans-serif;
+    --product-font:"Roboto Black", sans-serif;
     --nav-link-font:"OpenSans", sans-serif;
     --nav-link-color:rgb(15, 1, 1);
     --aqua-color:rgb(26, 188, 156);
@@ -7,6 +8,7 @@
     --almost-white-color:rgb(254, 254, 254);
     --logo-color: rgb(85, 82, 82);
     --blackout-color: rgba(0, 0, 2, 0.52);
+    --blackout-color-wo: rgb(0, 0, 2);
     --banner-button-color: rgba(78, 198, 171, .65);
     --title-color: #515151;
     --main-background-color: #e9f0fe;
