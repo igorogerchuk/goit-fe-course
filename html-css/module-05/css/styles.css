@@ -138,10 +138,10 @@ ul {
 }
 
 .slides-description {
-    width: 1110px;
+    width: 790px;
     position: absolute;
     left: 50%;
-    transform: translateX(-35%);
+    transform: translateX(-49%);
     top: 208px;
 }
 
