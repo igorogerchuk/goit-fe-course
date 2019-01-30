@@ -81,11 +81,11 @@ ul {
     clear: both;
 }
 
-.collection-section-color {
+.new-collection-section {
     background-color: var(--main-background-color);
 }
 
-.collection-section-wrapper {
+.container {
     width: 1110px;
     margin: 0 auto;
 }
@@ -278,7 +278,7 @@ ul {
     margin: 0 8px 8px 0;
 }
 
-.overlay-buttons {
+.overlay-buttons-list {
     position: absolute;
     top: 50%;
     left: 50%;
