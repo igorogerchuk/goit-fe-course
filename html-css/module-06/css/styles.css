@@ -148,8 +148,9 @@ a {
 
 .nav-list {
     display: flex;
-    width: 490px;
+    min-width: 490px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -207,8 +208,7 @@ a {
     text-align: center;
 }
 
-.section-title:before {
-    content: "We work with";
+.title-span {
     display: block;
     font-size: 24px;
     font-family: "Kaushan Script";
@@ -241,21 +241,46 @@ a {
     padding-left: 80px;
 }
 
-.serv-image {
+.serv-article::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
     position: absolute;
     left: 20px;
 }
 
-h3 {
+.alarm::before {
+    background-image: url(../img/icons/alarm.png);
+}
+
+.line-graph::before {
+    background-image: url(../img/icons/line-graph.png);
+}
+
+.computerok::before {
+    background-image: url(../img/icons/computerok.png);
+}
+
+.book::before {
+    background-image: url(../img/icons/book.png);
+}
+
+.home::before {
+    background-image: url(../img/icons/home.png);
+}
+
+.digital::before {
+    background-image: url(../img/icons/digital.png);
+}
+
+.serv-title {
+    margin-bottom: 14px;
     font-size: 14px;
     font-family: var(--logo-font);
     color: var(--title-color);
     font-weight: 400;
     text-transform: uppercase;
-}
-
-.serv-title {
-    margin-bottom: 14px;
 }
 
 .serv-descr {
@@ -271,7 +296,7 @@ h3 {
 }
 
 .serv-section {
-    margin-bottom: 90px;
+    padding-bottom: 90px;
 }
 
 .team-title {
@@ -296,6 +321,11 @@ h3 {
 }
 
 .name {
+    font-size: 14px;
+    font-family: var(--logo-font);
+    color: var(--title-color);
+    font-weight: 400;
+    text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -362,14 +392,7 @@ h3 {
 }
 
 .team-section {
-    margin-bottom: 80px;
-}
-
-hr {
-    border: none;
-    background-color: rgb(229, 229, 229);
-    color: rgb(229, 229, 229);
-    height: 1px;
+    padding-bottom: 80px;
 }
 
 .footer {
@@ -377,6 +400,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid rgb(229, 229, 229);
 }
 
 .footer-text {
@@ -417,6 +441,6 @@ hr {
     transition: 0.2s linear;
 }
 
-.input-button:hover, .input-button:focus{
+.input-button:hover, .input-button:focus {
     background-color: var(--pink-color);
 }
