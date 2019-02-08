@@ -92,6 +92,11 @@ a {
     transition: 0.2s linear;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--yellow-color);
+}
+
 .services {
     padding-top: 110px;
     padding-bottom: 100px;
@@ -106,9 +111,12 @@ a {
     font-size: 40px;
     line-height: 75px;
     font-family: var(--title-font);
-    color: var(--nav-color);
     text-transform: uppercase;
     text-align: center;
+}
+
+.services-title {
+    color: var(--nav-color);
 }
 
 .section-subtitle {
@@ -147,8 +155,8 @@ a {
     border-radius: 50%;
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 8px;
+    background-position: center;
+    margin-bottom: 26px;
 }
 
 .basket::before {
@@ -167,8 +175,8 @@ a {
     font-size: 18px;
     font-family: var(--title-font);
     color: var(--nav-color);
-    line-height: 75px;
     text-align: center;
+    margin-bottom: 18px;    
 }
 
 .serv-descr {
@@ -178,9 +186,11 @@ a {
     text-align: center;
 }
 
-.contact-us {
+.contact-us-section {
     padding-top: 92px;
     padding-bottom: 116px;
+    background: var(--nav-color) url(../img/map-image.png) no-repeat right bottom;
+    background-size: auto 80%;
 }
 
 .contact-container {
@@ -188,8 +198,12 @@ a {
     margin: 0 auto;
 }
 
+.contact-title {
+    color: #ffffff;
+}
+
 .contact-sub {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
 .contact-form {
@@ -198,7 +212,61 @@ a {
     flex-wrap: wrap;
 }
 
-.input-text {
+.inputs {
     width: 455px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    padding: 20px;
+    color: var(--nav-color);
+    transition: 0.2s linear;
+}
+
+.input-text {
     height: 52px;
+}
+
+.textarea {
+    height: 210px;
+    resize: none;
+}
+
+.inputs:hover {
+    border: 1px solid var(--yellow-color);
+}
+
+.inputs:focus:valid {
+    border: 1px solid #008000;
+}
+
+.inputs:focus:invalid {
+    border: 1px solid #ff0000;
+} 
+
+.inputs::placeholder {
+    color: #bbbbbb;    
+}
+
+.input-list-item {
+    margin-bottom: 27px;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 5px;
+    padding: 24px 48px;
+    font-size: 18px;
+    font-family: var(--title-font);
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: var(--yellow-color);
+    margin: 0 auto;
+    transition: 0.2s linear;
+}
+
+.submit-button:hover {
+    color: var(--nav-color);
+    cursor: pointer;
 }
