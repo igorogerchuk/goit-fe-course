@@ -85,6 +85,7 @@ a {
 }
 
 .nav-link {
+    display: block;
     font-size: 14px;
     font-family: var(--nav-font);
     color: var(--nav-color);
@@ -128,7 +129,7 @@ a {
 }
 
 .serv-sub {
-    margin-bottom: 50px;
+    margin-bottom: 78px;
 }
 
 .serv-list {
@@ -140,8 +141,7 @@ a {
 .serv-article {
     width: 290px;
     min-height: 232px;
-    padding-top: 28px;
-    padding-bottom: 18px;
+    
 }
 
 .serv-article::before {
