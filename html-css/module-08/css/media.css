@@ -1,0 +1,35 @@
+@media screen and (max-width: 320px){
+    .banner {
+        background-image: url(../img/banners/banner320.png);
+    }
+
+    .container {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .banner {
+        padding-top: 30px;
+        padding-bottom: 138px;        
+    }
+
+    .enter-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 128px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .banner-title {
+        margin-bottom: 15px;
+    }
+
+    .banner-descr {
+        margin-bottom: 18px;
+    }
+    
+}

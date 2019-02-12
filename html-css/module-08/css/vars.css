@@ -1,10 +1,8 @@
 :root {
-    --yellow-color: #fed136;
-    --nav-font: "MontserratRegular", sans-serif;
-    --nav-color: #222222;
+    --white-color: #ffffff;
     --title-font: "MontserratBold", sans-serif;
-    --sub-font: "DroidSerif-Italic", sans-serif;
-    --sub-color: #777777;
-    --descr-font: "RobotoSlabRegular", sans-serif;
-   
+    --descr-font: "RobotoLight", sans-serif;
+    --text-color: #333333;
+    --about-color: #666666;
+    --button-color: #ff4e50;
 }
