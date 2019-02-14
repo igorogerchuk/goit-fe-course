@@ -1,16 +1,13 @@
 @media screen and (max-width: 320px){
     .banner {
         background-image: url(../img/banners/banner320.png);
+        padding-top: 30px;
+        padding-bottom: 138px;
     }
 
     .container {
         width: 320px;
         margin: 0 auto;
-    }
-
-    .banner {
-        padding-top: 30px;
-        padding-bottom: 138px;        
     }
 
     .enter-list {
@@ -20,8 +17,7 @@
     }
 
     .logo {
-        text-align: center;
-        margin-bottom: 35px;
+        margin: 0 0 35px 0;
     }
 
     .banner-title {

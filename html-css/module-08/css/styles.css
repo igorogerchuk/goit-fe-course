@@ -57,19 +57,22 @@ a {
     text-align: center;
 }
 
+.banner {
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
 .banner-title {
     font-size: 30px;
     font-family: var(--title-font);
     color: var(--white-color);
     text-transform: uppercase;
-    text-align: center;
 }
 
 .banner-descr {
     font-size: 18px;
     font-family: var(--descr-font);
     color: var(--white-color);
-    text-align: center;
 }
 
 .banner-button {
@@ -113,4 +116,6 @@ a {
     border-radius: 20px;
     width: 280px;
     padding: 13px 0;
+    background-color: transparent;
 }
+
