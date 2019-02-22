@@ -77,7 +77,7 @@
         margin-bottom: 148px;
     }
 
-    .banner-div{
+    .banner-section{
         max-width: 510px;
         margin: 0 auto;
     }
@@ -125,12 +125,14 @@
 
 @media screen and (min-width: 940px) {
     .container {
-        width: 1440px;
+        min-width: 940px;
+        max-width: 1440px;
         margin: 0 auto;
     }
 
     .banner {
         background-image: url(../img/banners/banner1440.png);
+        background-position: center;
         min-height: 700px;
         padding-top: 38px;
         background-color: #1a1915;
@@ -144,7 +146,7 @@
         margin-bottom: 148px;
     }
 
-    .banner-div{
+    .banner-section{
         max-width: 510px;
         margin: 0 auto;
     }
