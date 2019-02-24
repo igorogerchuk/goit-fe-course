@@ -44,10 +44,19 @@ a {
 }
 
 .enter-list-item:first-child {
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
-.enter-list-item:last-child {
+.enter-list-item {
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    border-radius: 18px;
+    padding: 10px 20px;
+}
+
+.enter-list-item:hover, 
+.enter-list-item:focus {
     border-style: solid;
     border-width: 2px;
     border-color: var(--white-color);
@@ -79,9 +88,13 @@ a {
     text-transform: uppercase;
 }
 
+.container {
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
 .banner {
     text-align: center;
-    background-repeat: no-repeat;
 }
 
 .banner-title {
@@ -104,6 +117,14 @@ a {
     border-radius: 20px;
     border: none;
     background-color: var(--button-color);
+}
+
+.banner-button:hover,
+.banner-button:focus{
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+    border-radius: 20px;
+    background-color: transparent;
 }
 
 .partners-section {
@@ -190,5 +211,11 @@ a {
     width: 280px;
     padding: 13px;
     background-color: transparent;
+}
+
+.other-partners:hover,
+.other-partners:focus {
+    color: var(--white-color);
+    background-color: var(--button-color);
 }
 
