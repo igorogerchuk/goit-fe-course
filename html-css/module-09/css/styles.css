@@ -1,0 +1,212 @@
+@import "vars.css";
+@import "media.css";
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v12-latin/montserrat-v12-latin-800.woff') format('woff');
+    /* Modern Browsers */
+}
+
+/* roboto-300 - latin */
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/roboto-v18-latin/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v18-latin/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+}
+
+.enter-list-item:first-child {
+    margin-right: 20px;
+}
+
+.enter-list-item {
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    border-radius: 18px;
+    padding: 10px 20px;
+}
+
+.enter-list-item:hover, 
+.enter-list-item:focus {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--white-color);
+    border-radius: 18px;
+    padding: 10px 20px;
+}
+
+.enter-list {
+    display: flex;
+    align-items: center;
+}
+
+.enter-link {
+    display: block;
+    font-size: 14px;
+    font-family: var(--title-font);
+    color: var(--white-color);
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo-link {
+    display: block;
+    font-size: 20px;
+    font-family: var(--title-font);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner-title {
+    font-family: var(--title-font);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.banner-descr {
+    font-family: var(--descr-font);
+    color: var(--white-color);
+}
+
+.banner-button {
+    width: 280px;
+    padding: 13px;
+    font-size: 14px;
+    font-family: var(--title-font);
+    color: var(--white-color);
+    border-radius: 20px;
+    border: none;
+    background-color: var(--button-color);
+}
+
+.banner-button:hover,
+.banner-button:focus{
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.partners-section {
+    text-align: center;
+}
+
+.partners-list-item {
+    position: relative;
+}
+
+.person {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.partners-list-item::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--white-color);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 85px;
+    left: 122px;
+}
+
+.tv::before {
+    background-image: url(../img/icons/tv.png);
+    background-color: var(--button-color);
+}
+
+.chemistry::before {
+    background-image: url(../img/icons/chemistry.png);
+    background-color: #ffa507;
+}
+
+.coffee::before {
+    background-image: url(../img/icons/coffee.png);
+    background-color: #1cd7ad;
+}
+
+.plane::before {
+    background-image: url(../img/icons/plane.png);
+    background-color: #4e73db;
+}
+
+.partners-title {
+    font-size: 22px;
+    font-family: var(--title-font);
+    color: var(--text-color);
+}
+
+.name {
+    font-size: 14px;
+    font-family: var(--title-font);
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.about {
+    font-size: 14px;
+    font-family: var(--descr-font);
+    color: var(--about-color);
+    text-align: center;
+}
+
+.other-partners {
+    font-size: 14px;
+    font-family: var(--title-font);
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+    border-radius: 20px;
+    width: 280px;
+    padding: 13px;
+    background-color: transparent;
+}
+
+.other-partners:hover,
+.other-partners:focus {
+    color: var(--white-color);
+    background-color: var(--button-color);
+}
+
