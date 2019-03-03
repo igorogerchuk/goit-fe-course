@@ -6,8 +6,8 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -25,10 +25,9 @@ a {
 }
 
 @font-face {
-    font-family: "MontserratBold";
+    font-family: 'MontserratBold';
     src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/montserrat-v12-latin/montserrat-v12-latin-800.woff') format('woff');
-    /* Modern Browsers */
+    url('../fonts/montserrat-v12-latin/montserrat-v12-latin-800.woff') format('woff'); /* Modern Browsers */
 }
 
 /* roboto-300 - latin */
@@ -37,6 +36,25 @@ a {
     font-family: 'RobotoLight';
     src: url('../fonts/roboto-v18-latin/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/roboto-v18-latin/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+}
+
+.wrapper {
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.enter-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .enter-list-item:first-child {
@@ -51,18 +69,8 @@ a {
     padding: 10px 20px;
 }
 
-.enter-list-item:hover, 
-.enter-list-item:focus {
-    border-style: solid;
-    border-width: 2px;
+.enter-list-item:hover, .enter-list-item:focus {
     border-color: var(--white-color);
-    border-radius: 18px;
-    padding: 10px 20px;
-}
-
-.enter-list {
-    display: flex;
-    align-items: center;
 }
 
 .enter-link {
@@ -84,13 +92,8 @@ a {
     text-transform: uppercase;
 }
 
-.container {
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-.banner {
-    text-align: center;
+.banner-section{
+    margin: 0 auto;
 }
 
 .banner-title {
@@ -115,16 +118,11 @@ a {
     background-color: var(--button-color);
 }
 
-.banner-button:hover,
-.banner-button:focus{
+.banner-button:hover, .banner-button:focus {
     color: var(--button-color);
     border: 2px solid var(--button-color);
-    border-radius: 20px;
     background-color: transparent;
-}
-
-.partners-section {
-    text-align: center;
+    outline: none;
 }
 
 .partners-list-item {
@@ -149,7 +147,7 @@ a {
     background-position: center;
     position: absolute;
     top: 85px;
-    left: 122px;
+    left: 60%;
 }
 
 .tv::before {
@@ -182,7 +180,6 @@ a {
     font-size: 14px;
     font-family: var(--title-font);
     color: var(--text-color);
-    text-align: center;
     margin-bottom: 18px;
 }
 
@@ -190,7 +187,6 @@ a {
     font-size: 14px;
     font-family: var(--descr-font);
     color: var(--about-color);
-    text-align: center;
 }
 
 .other-partners {
@@ -204,9 +200,8 @@ a {
     background-color: transparent;
 }
 
-.other-partners:hover,
-.other-partners:focus {
+.other-partners:hover, .other-partners:focus {
     color: var(--white-color);
     background-color: var(--button-color);
+    outline: none;
 }
-
