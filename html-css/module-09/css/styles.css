@@ -108,6 +108,7 @@ a {
 }
 
 .banner-button {
+    display: block;
     width: 280px;
     padding: 13px;
     font-size: 14px;
