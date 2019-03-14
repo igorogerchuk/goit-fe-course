@@ -2,7 +2,14 @@
     --white-color: #ffffff;
     --title-font: "MontserratBold", sans-serif;
     --descr-font: "RobotoLight", sans-serif;
-    --text-color: #333333;
     --about-color: #666666;
     --button-color: #ff4e50;
+
+    --logo-font:"Montserrat", sans-serif;
+    --aqua-color: #95e1d3;
+    --pink-color: #f38181;
+    --title-color: rgb(51, 51, 51);
+    --text-color: #999999;
+    --text-font: "Roboto", sans-serif;
+    --share-color: #fce38a;
 }
