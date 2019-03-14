@@ -38,17 +38,100 @@ html {
 }
 
 .wrapper {
-    background-image: url(../img/banner/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
+    background: url(../img/banner/banner.jpg) no-repeat top center;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .wrapper {
-        background-image: url(../img/banner/banner@2x.jpg);
-        background-repeat: no-repeat;
-        background-position: center top;
+        background: url(../img/banner/banner@2x.jpg) no-repeat top center;
     }
 }
 
+.service {
+    /* width: 380px; */
+    position: relative;
+    padding-left: 80px;
+}
 
+.service::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 20px;
+}
+
+.service--alarm::before {
+    background-image: url(../img/services/alarm.svg);
+}
+
+.service--line-graph::before {
+    background-image: url(../img/services/line-graph.svg);
+}
+
+.service--computerok::before {
+    background-image: url(../img/services/computerok.svg);
+}
+
+.service--book::before {
+    background-image: url(../img/services/book.svg);
+}
+
+.service--home::before {
+    background-image: url(../img/services/home.svg);
+}
+
+.service--digital::before {
+    background-image: url(../img/services/digital.svg);
+}
+
+.social__link svg {
+    width: 30px;
+    height: 30px;
+    fill: red;
+}
+
+/* .social {
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to top, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9));
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.team__item:hover .social, .team__item:focus .social {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+.team__item:hover .person, .team__item:focus .person {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px aqua;
+}
+
+.social__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 224px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__item:hover, .social__item:focus {
+    background-color: aqua;
+}
+
+.social__item {
+    width: 55px;
+    height: 55px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+} */
