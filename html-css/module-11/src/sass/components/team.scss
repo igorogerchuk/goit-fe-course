@@ -1,0 +1,123 @@
+.team {
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+
+.team__pre-title {
+  font-size: 24px;
+  font-family: $pre-title-font;
+  color: $title-color;
+  margin-bottom: 15px;
+}
+
+.team__title {
+  font-size: 30px;
+  font-family: $title-font;
+  color: $title-color;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 60px;
+    border: 2px solid $pink-color;
+    margin: 35px auto 0 auto;
+  }
+}
+
+.team__descr {
+  width: 980px;
+  font-size: 15px;
+  font-family: $text-font;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.team__list {
+  @extend %list;
+}
+
+.person__img {
+  margin-bottom: 30px;
+}
+
+.person__name {
+  font-size: 14px;
+  font-family: $sub-title-font;
+  font-weight: bold;
+  color: $title-color;
+  text-transform: uppercase;
+}
+
+.person__profession {
+  font-size: 15px;
+  font-family: $italic-text-font;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+.team__item {
+  position: relative;
+
+  &:hover .social,
+  &:focus .social {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+  }
+
+  &:hover .person__img,
+  &:focus .person__img {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px $aqua-color;
+  }
+}
+
+.social {
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.social__list {
+  @extend %list;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 224px;
+}
+
+.social__link {
+  @extend %link;
+  width: 55px;
+  height: 55px;
+  background-color: $link-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+
+  &:hover,
+  &:focus {
+    background-color: $pink-color;
+  }
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $white-color;
+  }
+}
+
+.social__icon {
+  width: 26px;
+  height: 26px;
+  fill: $pink-color;
+}

@@ -1,0 +1,50 @@
+.footer {
+  min-height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-family: $sub-title-font;
+  font-weight: bold;
+  color: $title-color;
+}
+
+.footer__link {
+  @extend %link;
+  color: $pink-color;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.input-email {
+  width: 230px;
+  font-size: 15px;
+  font-family: $italic-text-font;
+  color: $text-color;
+  line-height: 40px;
+  padding-left: 12px;
+  border: 1px solid #e7e7e7;
+}
+
+.input-button {
+  border: none;
+  width: 150px;
+  background-color: $aqua-color;
+  font-size: 14px;
+  font-family: $title-font;
+  color: $white-color;
+  text-transform: uppercase;
+  transition: 0.2s linear;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $pink-color;
+  }
+}
