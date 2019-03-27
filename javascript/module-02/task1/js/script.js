@@ -11,7 +11,6 @@ while (true) {
     alert('Было введено не число, попробуйте еще раз');
   } else {
     numbers.push(Number(input));
-    console.log(numbers);
   }
 }
 
@@ -19,6 +18,7 @@ if (numbers.length !== 0) {
   for (let number of numbers) {
     total += number;
   }
+  alert(`Общая сумма чисел равна ${total}`);
+} else {
+  alert('Не добавлено ни одного числа');
 }
-
-alert(`Общая сумма чисел равна ${total}`);
