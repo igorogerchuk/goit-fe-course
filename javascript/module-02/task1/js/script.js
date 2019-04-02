@@ -4,15 +4,16 @@ let input;
 const numbers = [];
 let total = 0;
 
-while (true) {
+do {
   input = prompt('Введите число');
   if (input === null) break;
-  if (isNaN(Number(input))) {
-    alert('Было введено не число, попробуйте еще раз');
-  } else {
+  if (!isNaN(parseFloat(input)) && isFinite(input)) {
     numbers.push(Number(input));
+    console.log(numbers);
+  } else {
+    alert('Было введено не число, попробуйте еще раз');
   }
-}
+} while (input !== null);
 
 if (numbers.length !== 0) {
   for (let number of numbers) {
