@@ -7,9 +7,8 @@ let total = 0;
 do {
   input = prompt('Введите число');
   if (input === null) break;
-  if (!isNaN(parseFloat(input)) && isFinite(input)) {
-    numbers.push(Number(input));
-    console.log(numbers);
+  if (!Number.isNaN(+input) && input.trim() !== '') {
+    numbers.push(+input);
   } else {
     alert('Было введено не число, попробуйте еще раз');
   }
