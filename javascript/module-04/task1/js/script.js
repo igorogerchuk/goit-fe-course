@@ -95,7 +95,13 @@ const notepad = {
      */
     const filteredNotesByQuery = [];
     for (const note of this.notes) {
-      if (note.title.includes(query) || note.body.includes(query)) {
+      const noteTitleInLowerCase = note.title.toLowerCase();
+      const noteBodyInLowerCase = note.body.toLowerCase();
+      const queryInLowerCase = query.toLowerCase();
+      if (
+        noteBodyInLowerCase.includes(queryInLowerCase) ||
+        noteTitleInLowerCase.includes(queryInLowerCase)
+      ) {
         filteredNotesByQuery.push(note);
       }
     }
@@ -215,5 +221,5 @@ console.log(
 /*
  * Повторил HTML и CSS, удаляю запись c id-2
  */
-notepad.deleteNote('id-2');
-console.log('Заметки после удаления с id -2: ', notepad.getNotes());
+// notepad.deleteNote('id-2');
+// console.log('Заметки после удаления с id -2: ', notepad.getNotes());
