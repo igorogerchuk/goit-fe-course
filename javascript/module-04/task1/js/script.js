@@ -46,13 +46,13 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: ничего
      */
-    for (let i = 0; i < this.notes.length; i++) {
-      const note = this.notes[i];
-      if (note.id === id) {
-        this.notes.splice(i, 1);
-        break;
-      }
+    const note = this.findNoteById(id);
+
+    if (!note) {
+      return;
     }
+
+    this.notes.splice(this.notes.indexOf(note), 1);
   },
   updateNoteContent(id, updatedContent) {
     /*
@@ -63,13 +63,16 @@ const notepad = {
      * Принимает: идентификатор заметки и объект, полями которого надо обновить заметку
      * Возвращает: обновленную заметку
      */
-    const contentValues = Object.values(updatedContent);
-    for (const note of this.notes) {
-      if (note.id === id) {
-        note.body = contentValues.join(' ');
-        return note;
-      }
+    const note = this.findNoteById(id);
+
+    if (!note) {
+      return;
     }
+
+    for (const key of Object.keys(updatedContent)) {
+      note[key] = updatedContent[key];
+    }
+    return note;
   },
   updateNotePriority(id, priority) {
     /*
@@ -78,12 +81,14 @@ const notepad = {
      * Принимает: идентификатор заметки и ее новый приоритет
      * Возвращает: обновленную заметку
      */
-    for (const note of this.notes) {
-      if (note.id === id) {
-        note.priority = priority;
-        return note;
-      }
+    const note = this.findNoteById(id);
+
+    if (!note) {
+      return;
     }
+
+    note.priority = priority;
+    return note;
   },
   filterNotesByQuery(query) {
     /*
@@ -95,13 +100,7 @@ const notepad = {
      */
     const filteredNotesByQuery = [];
     for (const note of this.notes) {
-      const noteTitleInLowerCase = note.title.toLowerCase();
-      const noteBodyInLowerCase = note.body.toLowerCase();
-      const queryInLowerCase = query.toLowerCase();
-      if (
-        noteBodyInLowerCase.includes(queryInLowerCase) ||
-        noteTitleInLowerCase.includes(queryInLowerCase)
-      ) {
+      if (note.body.includes(query) || note.title.includes(query)) {
         filteredNotesByQuery.push(note);
       }
     }
