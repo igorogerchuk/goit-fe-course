@@ -27,7 +27,6 @@ class Notepad {
         return note;
       }
     }
-    return undefined;
   }
 
   saveNote(note) {
@@ -38,7 +37,7 @@ class Notepad {
      * Возвращает: сохраненную заметку
      */
     this.notes.push(note);
-    return this.notes[this.notes.length - 1];
+    return note;
   }
 
   deleteNote(id) {
@@ -72,9 +71,8 @@ class Notepad {
       return;
     }
 
-    for (const key of Object.keys(updatedContent)) {
-      note[key] = updatedContent[key];
-    }
+    Object.assign(note, updatedContent);
+
     return note;
   }
 

@@ -23,7 +23,6 @@ const Notepad = function Notepad(notes = []) {
         return note;
       }
     }
-    return undefined;
   };
 
   this.saveNote = function(note) {
@@ -34,7 +33,7 @@ const Notepad = function Notepad(notes = []) {
      * Возвращает: сохраненную заметку
      */
     this.notes.push(note);
-    return this.notes[this.notes.length - 1];
+    return note;
   };
 
   this.deleteNote = function(id) {
@@ -68,9 +67,8 @@ const Notepad = function Notepad(notes = []) {
       return;
     }
 
-    for (const key of Object.keys(updatedContent)) {
-      note[key] = updatedContent[key];
-    }
+    Object.assign(note, updatedContent);
+
     return note;
   };
 
